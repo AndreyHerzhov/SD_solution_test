@@ -1,0 +1,2 @@
+!function(){var t={addBtn:document.querySelector(".add_button"),input:document.querySelector("input"),list:document.querySelector(".pairs_list")},e=[];t.addBtn.addEventListener("click",(function(n){if(n.preventDefault(),!t.input.value)return;var i=t.input.value,u=(r=i,'<li class="pairs-list_item">'.concat(r,"</li>"));var r;e.push(i),console.log(e),a=u,t.list.insertAdjacentHTML("beforeend",a),t.input.value="";var a}))}();
+//# sourceMappingURL=index.10dc256c.js.map
