@@ -6,9 +6,13 @@
     <form id="form">
           <label class="list_title" >Name/Value Pair</label>
           <input type="text" 
-                 pattern="[A-Za-z]{3}">
+                 pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                        title="Name may contain only letters, 
+                        apostrophe, dash and spaces. 
+                        For example Adrian, Jacob Mercer, 
+                        Charles de Batz de Castelmore d'Artagnan"">
     </form>
-    <input type="submit" class="button add_button" value="Add">
+    <button type="submit" class="button add_button">Add</button>
     <!-- <button type="submit" class="button add_button">Add</button> -->
   
   </div>
