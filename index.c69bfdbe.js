@@ -1,2 +1,0 @@
-const t={addBtn:document.querySelector(".add_button"),input:document.querySelector("input"),list:document.querySelector(".pairs_list")},e=[];t.addBtn.addEventListener("click",(function(n){if(n.preventDefault(),!t.input.value)return;const i=t.input.value,u=(l=i,`<li class="pairs-list_item">${l}</li>`);var l;e.push(i),console.log(e),r=u,t.list.insertAdjacentHTML("beforeend",r),t.input.value="";var r}));
-//# sourceMappingURL=index.c69bfdbe.js.map
