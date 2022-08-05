@@ -23,13 +23,18 @@ p,li {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: large;
   font-weight: bold;
-  width: 150px;
+  width: 100px;
   height: 30px;
   border-radius: 12px;
   transition:  250ms ease-in-out;
-  margin-left: 80px;
+  margin-left: 25px;
   margin-top: 20px;
 
+  @media (min-width: 768px) {
+    margin-left: 80px;
+    width: 150px;
+ }
+ 
 
   &:hover{
     cursor: pointer;
@@ -42,14 +47,27 @@ p,li {
 
 button {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: large;
+  font-size: 12px;
   font-weight: bold;
-  width: 150px;
+  width: 95px;
   height: 30px;
   border-radius: 12px;
   transition:  250ms ease-in-out;
-  margin-left: 80px;
+  
   margin-top: 20px;
+
+  @media (min-width: 550px) {
+    margin-left: 25px;
+    width: 150px;
+    font-size: 18px;
+ }
+
+
+  @media (min-width: 768px) {
+    margin-left: 80px;
+    width: 150px;
+    font-size: 18px;
+ }
 
 
   &:hover{
@@ -62,12 +80,17 @@ button {
 }
 
 input {
-  
-  font-size: 26px;
+  width: 230px;
   height: 30px;
   border-radius: 10px;
-}
+  @media (min-width: 550px) {
+    width: 280px;
+ }
 
+  @media (min-width: 768px) {
+    width: 300px;
+ }
+}
  
 
 li {
@@ -83,24 +106,48 @@ li {
  
 .add_wrapper{
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
   margin-bottom: 50px;
+  @media (min-width: 550px) {
+    flex-direction: row;
+ }
 }
 
 .test_card {
   
   margin-top: 50px;
   margin: 0 auto;
-  padding: 15px;
-  width: 600px;
-  height: 1000px;
+  padding: 25px;
+  width: 280px;
+  height: 740px;
   background: aliceblue;
   border-radius: 20px;
+
+  @media (min-width: 550px) {
+    width: 500px;
+    height: 800px;
+ }
+
+
+  @media (min-width: 768px) {
+    width: 600px;
+    height: 800px;
+ }
+
+
 }
 
 .button_wrapper{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  @media (min-width: 550px) {
+    flex-direction: column;
+ }
+ 
  
 
 }
@@ -113,13 +160,28 @@ li {
    
   border-radius: 20px;
   border: 1px solid black;
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  height: 300px;
   background-color: rgb(255, 255, 255);
+
+  @media (min-width: 550px) {
+    // width: 210px;
+    height: 300px;
+  }
+  @media (min-width: 768px) {
+    width: 300px;
+    height: 400px;
+ }
+ 
 }
 
 .list_wrapper{
   display: flex;
+  flex-direction: column-reverse;
+  @media (min-width: 550px) {
+    display: flex;
+    flex-direction: row;
+ }
 }
 
 .list_title{

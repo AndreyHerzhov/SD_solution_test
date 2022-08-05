@@ -6,11 +6,8 @@
     <form id="form">
           <label class="list_title" >Name/Value Pair</label>
           <input type="text" 
-                 pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-                        title="Name may contain only letters, 
-                        apostrophe, dash and spaces. 
-                        For example Adrian, Jacob Mercer, 
-                        Charles de Batz de Castelmore d'Artagnan"">
+                 pattern="^[a-zA-Z0-9\s]"
+                 >
     </form>
     <button type="submit" class="button add_button">Add</button>
     <!-- <button type="submit" class="button add_button">Add</button> -->
@@ -27,11 +24,10 @@
         </ul>
       </div>
       <div class="button_wrapper">
-        <button class="sort_name" type="submit" data-clear="sort">Sort by Name</button>
-        <button class="sort_value" type="submit" data-clear="sort">Sort by Value</button>
-        <button type="submit" data-clear="clear">Delete</button>
-        <button type="submit" data-clear="clear">Show as XML</button>
-         
+        <button class="sort_name" type="submit" data-sort="sort">Sort by Name</button>
+        <button class="sort_value" type="submit" data-sort="sort">Sort by Value</button>
+        <button type="button" id="clear_button" data-clear="clear">Delete</button>
+        <button type="button" data-transform="xml">Show as XML</button>
       </div>
     </div>
 </div>
